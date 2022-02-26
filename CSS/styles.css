@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;  
   }
-/* body{background-color:#222;color:white;} */
 
 nav {
   background-color:rgba(255,255,255,0.1); 
@@ -27,7 +26,3 @@ header{
 
 
 }
-
-.content {color: rgb(255,0,0);}
-.adrenaline{ color: rgb(2,2,255);}
-#b{height:500px;width:600px;}
