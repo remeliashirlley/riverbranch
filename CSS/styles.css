@@ -94,3 +94,23 @@ header {
 #para1 { float:right}
 #para2 {float:left;}
 #para3 {float:left;}
+
+#logo1 {
+  padding-top: 5px;
+  font-family:crimson pro;
+  font-size: 30px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer{
+  text-align: center;
+  font-family:crimson pro;
+  font-size: 30px;
+}
