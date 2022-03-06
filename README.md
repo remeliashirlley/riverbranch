@@ -1,8 +1,8 @@
-## Welcome to RiverBranch <br />  
+## Welcome to RiverBranch <br />  <br />  
  
-Web URL: remeliashirlley.github.io/riverbranch
+Web URL: remeliashirlley.github.io/riverbranch <br />  
  
-RiverBranch is a travel destination/journey website that contains 4 different travel themes: Adrenaline, Surrounding, Journey and Cravings. Each travel themes would have their own link that can be accessed from the Home page.
+RiverBranch is a travel destination/journey website that contains 4 different travel themes: Adrenaline, Surrounding, Journey and Cravings. Each travel themes would have their own link that can be accessed from the Home page. <br />  
 
 > Adrenaline
 > - Suggests possible activities adventure seekers can do and their locations
