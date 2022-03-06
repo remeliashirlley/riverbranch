@@ -1,4 +1,4 @@
-## Welcome to RiverBranch! <br />  
+## Welcome to RiverBranch <br />  
  
 Web URL: remeliashirlley.github.io/riverbranch
  
