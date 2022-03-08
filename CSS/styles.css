@@ -57,8 +57,10 @@ body{
   color:rgb(255,255,255);
 }
 
-.dropdown:hover .dropdown-content {
+.dropbtn:hover ~.dropdown-content {
   display: block;
+  /*transition*/
+  
 }
 
 header {
