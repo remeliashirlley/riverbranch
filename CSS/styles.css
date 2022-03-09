@@ -24,6 +24,11 @@ body{
   width:100%;
   height:35px;
 }
+#linked{
+  background-color:rgba(20,27,35,1);
+  padding-top: 2px;
+  padding-bottom:2px;
+}
 
 .dropbtn {
   float:right;
@@ -57,7 +62,7 @@ body{
   color:rgb(255,255,255);
 }
 
-.dropbtn:hover ~.dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
   /*transition*/
   
@@ -115,5 +120,8 @@ footer{
   text-align: center;
   font-family:crimson pro;
   font-size: 30px;
-  background-color: red;
+  background-color:rgba(20,27,35,1);
+  color:rgb(255,255,255);
+  padding-top:5px;
+  padding-bottom:5px;
 }
