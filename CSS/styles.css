@@ -13,7 +13,6 @@ body{
   font-family:crimson pro;
   font-size: 30px;
   padding-left: 30px;
-  float:left;
 }
 
 .dropdown {
@@ -31,12 +30,14 @@ body{
 }
 
 .dropbtn {
-  float:right;
   background-color:rgb(0,0,0,0);
   color:rgb(255,255,255);
   border: none;
   font-size: 30px;
   padding-right:30px;
+  position:absolute;
+  top:0;
+  right:0;
 }
 
 .dropdown-content {
@@ -78,41 +79,28 @@ header {
 .placeholder {
   width:100%;
   background-color: rgb(214, 201, 177);
-  float:left;
   font-size:15px;font-weight: bold;
   text-align: center;
   padding-top: 20px;padding-bottom: 20px;
+  grid-area: placehold;
 }
 
-.para {
-  width:50%;
-  padding-top:50%; /* padding % relative to width*/
-  position:relative;
-}
-
-.text {
-  top:0;left:0;bottom:0;right:0;
-  position:absolute;
-  text-align: center;
+.adrenalinepara{
   padding-top:35%;
-}
-
-#para1 { float:right}
-#para2 {float:left;}
-#para3 {float:left;}
-
-#logo1 {
-  padding-top: 5px;
-  font-family:crimson pro;
-  font-size: 30px;
-  padding-left: 30px;
   text-align: center;
+  grid-area: p1;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.surroundingspara{
+  padding-top:35%;
+  text-align: center;
+  grid-area: p2;
+}
+
+.roadtrippara{
+  padding-top:35%;
+  text-align: center;
+  grid-area:p3;
 }
 
 footer{
@@ -123,4 +111,20 @@ footer{
   color:rgb(255,255,255);
   padding-top:5px;
   padding-bottom:5px;
+  grid-area:foot;
+}
+
+@media screen and (min-width:10px) {
+  main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "mainimg mainimg"
+      "placehold placehold"
+      "i1 p1"
+      "p2 i2"
+      "i3 p3"
+      "foot foot";
+  }
 }
