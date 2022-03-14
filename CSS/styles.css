@@ -89,18 +89,21 @@ header {
   padding-top:35%;
   text-align: center;
   grid-area: p1;
+  padding-bottom:35%;
 }
 
 .surroundingspara{
   padding-top:35%;
   text-align: center;
   grid-area: p2;
+  padding-bottom:35%;
 }
 
 .roadtrippara{
   padding-top:35%;
   text-align: center;
   grid-area:p3;
+  padding-bottom:35%;
 }
 
 footer{
@@ -114,11 +117,29 @@ footer{
   grid-area:foot;
 }
 
-@media screen and (min-width:10px) {
+
+
+@media screen and (min-width:100px) {
+  main{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "mainimg"
+      "placehold"
+      "i1"
+      "p1"
+      "i2"
+      "p2"
+      "i3"
+      "p3"
+      "foot";
+  }
+}
+
+@media screen and (min-width:800px) {
   main{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas: 
       "mainimg mainimg"
       "placehold placehold"
