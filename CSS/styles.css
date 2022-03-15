@@ -107,6 +107,9 @@ header {
 }
 
 footer{
+  position:fixed;
+  bottom:0;
+  width:100%;
   text-align: center;
   font-family:crimson pro;
   font-size: 30px;
@@ -120,8 +123,8 @@ footer{
 .grid {
   position:absolute;
   top:50px;
-  column-count:2;
   padding:10px;
+  padding-bottom: 50px;
 }
 
 .image{
@@ -130,20 +133,24 @@ footer{
   overflow:hidden;
 }
 
-.image p{
-  /* position:absolute; */
-  /* margin-top:10px; */
-  text-align: center;
-  font-size: 10px;
-  background-color:rgb(255,255,255,0.5);
+.image img{
+  transition: transform .2s;
 }
 
-.image h1{
+.image img:hover{
+  transform: scale(1.1);
+}
+
+
+.text{
   /* position:absolute; */
   /* margin-top:10px; */
   text-align: center;
   font-size: 10px;
   background-color:rgb(255,255,255,0.5);
+  border-color:black;
+  border-style: solid;
+  border-width: 1px;
 }
 
 
@@ -162,6 +169,9 @@ footer{
       "p3"
       "foot";
   }
+  .grid{
+    column-count:2;
+  }
 }
 
 @media screen and (min-width:700px) {
@@ -175,5 +185,8 @@ footer{
       "p2 i2"
       "i3 p3"
       "foot foot";
+  }
+  .grid{
+    column-count:3;
   }
 }
