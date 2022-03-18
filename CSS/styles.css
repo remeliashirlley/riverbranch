@@ -14,16 +14,17 @@ body{
   padding-top: 5px; padding-left: 30px;
 }
 
-#linked{
-  background-color:rgba(20,27,35,1);
-  padding-top: 4px; padding-bottom:4px;
-}
-
 nav {
   background-color:rgba(255,255,255,0); color:rgb(255,255,255);
   position: absolute;
-  top:0%; left:0%;
+  top:10px; left:0%;
   height:35px; width:100%;
+}
+
+#linked{
+  background-color:rgba(20,27,35,1);
+  top:0;
+  padding-top: 4px; padding-bottom:4px;
 }
 
 .nav-content li {
@@ -31,7 +32,6 @@ nav {
 }
 
 .nav-content a {
-  padding: 12px;
   text-decoration: none;
   font-size: 12px; font-weight:bold;
   display: block;
@@ -53,23 +53,15 @@ header {
   grid-area: placehold;
 }
 
-.adrenalinepara{
+.para {
   padding-top:35%; padding-bottom:35%;
   text-align: center;
-  grid-area: p1;
 }
 
-.surroundingspara{
-  padding-top:35%; padding-bottom:35%;
-  text-align: center;
-  grid-area: p2;
-}
-
-.roadtrippara{
-  padding-top:35%; padding-bottom:35%;
-  text-align: center;
-  grid-area:p3;
-}
+#adrenalinepara {grid-area: p1;}
+#surroundingspara {grid-area: p2;}
+#roadtrippara {grid-area:p3;}
+#cravingspara {grid-area:p4;}
 
 footer{
   position:fixed;
@@ -87,33 +79,29 @@ footer{
   top:50px;
   padding:10px;
   padding-bottom: 50px;
+  background-color: white;
 }
 
 .image{
   display:inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   overflow:hidden;
 }
 
-.image img{
-  transition: transform .2s;
-}
-
-.image img:hover{
-  transform: scale(1.1);
-}
-
+.image img {transition: transform .3s;}
+.image img:hover {transform: scale(1.1);}
 
 .text{
-  /* position:absolute; */
-  /* margin-top:10px; */
+  position:relative;
+  bottom:50px;
   text-align: center;
   font-size: 10px;
-  background-color:rgb(255,255,255,0.5);
-  border-color:black; border-style: solid; border-width: 1px;
+  background-color:rgba(255,255,255,0.8);color:black;
+  width:50%;
+  margin-left: 25%;
 }
 
-
+/* ----------------------------Mobile query--------------------------- */
 @media screen and (min-width:100px) {
   header{
     font-size:12px;
@@ -142,11 +130,11 @@ footer{
 
   .nav-content a {
     color: black;
+    padding:14px;
   }
 
   .nav-content a:hover {
-    background-color: rgb(22, 2);
-     color:rgb(255,255,255);
+    background-color: rgb(20,27,35); color:rgb(255,255,255);
   }
   
   nav:hover .nav-content {
@@ -173,32 +161,10 @@ footer{
   }
 }
 
+/* ----------------------------Tablet query--------------------------- */
 @media screen and (min-width:700px) {
   header{
     font-size:15px;
-  }
-
-  .navbtn {
-    display: none;
-  }  
-
-  .nav-content {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    background-color:rgba(20,27,35,1);
-    color:white;
-    position: absolute;
-    top:0; right:0;
-    width: 600px; height: auto;
-  } 
-
-  .nav-content li {
-    display: inline-block;
-  }
-
-  .nav-content a {
-    color: white;
   }
 
   main{
@@ -210,9 +176,49 @@ footer{
       "i1 p1"
       "p2 i2"
       "i3 p3"
+      "p4 i4"
       "foot foot";
   }
   .grid{
     column-count:3;
+  }
+}
+
+/* ---------------------------Desktop query--------------------------- */
+@media screen and (min-width:1400px){
+
+  .navbtn {
+    display: none;
+  }  
+
+  .nav-content {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(20,27,35,0);
+    color:white;
+    position: absolute;
+    top:0; right:0;
+    width: 600px; height: auto;
+  } 
+
+  .nav-content li {
+    display: inline-block;
+    /* border-style: solid;
+    border-width: 1px; */
+    margin-right: 5px;
+  }
+
+  .nav-content a {
+    padding:10px;
+    color: white;
+  }
+
+  .nav-content a:hover {
+    border-style: solid; border-width: 1px;
+  }
+
+  .grid{
+    column-count:4;
   }
 }
