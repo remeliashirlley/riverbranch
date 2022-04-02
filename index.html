@@ -7,6 +7,10 @@
     <title>RiverBranch - Home</title>
     <link rel="icon" type="image/png" href="images/favicon_io/android-chrome-512x512.png">
     <link rel="stylesheet" href="CSS/styles.css">
+    <script src="../js/map.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://unpkg.com/mapbox@1.0.0-beta9/dist/mapbox-sdk.min.js'></script>
 </head>
 <body>
     <main>
@@ -46,6 +50,9 @@
            <h4>[feirn-vay] . German </h5>
            <h5> (.n) an ache for distant places; missing places you've never been. "Craving for travel."</h5>
         </section>
+
+        <div id='map'></div>
+    
 
         <img src="images/1.jpg" alt="Man riding ATV in dessert" Style="grid-area:i1; height:auto;width:100%;";>
         <section class="para" id="adrenalinepara">

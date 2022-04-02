@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>RiverBranch - Adrenaline</title>
     <link rel="icon" type="image/png" href="../images/favicon_io/android-chrome-512x512.png">
     <link rel="stylesheet" href="../CSS/styles.css">
-    <script src="../js/map.js"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
-    <script src='https://unpkg.com/mapbox@1.0.0-beta9/dist/mapbox-sdk.min.js'></script>
+    <!-- <script src="../js/map.js"></script> -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
 </head>
 <body>
     <nav id="linked">
@@ -28,9 +31,16 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div id='map' />
-    
-    <!-- <iframe width='100%' height='500px' src="https://api.mapbox.com/styles/v1/remeliashirlley/cl1hi0m82001k15rjscjy23l1.html?title=false&access_token=pk.eyJ1IjoicmVtZWxpYXNoaXJsbGV5IiwiYSI6ImNsMWhodDY3NjBjcmszaXB3OTMzemtkbXYifQ.pJeHvUL0LGZGu3YSeVDPjA&zoomwheel=false#2.54/25.19/7.82" title="Monochrome" style="border:none;"></iframe> -->
+    <div id="map"></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicmVtZWxpYXNoaXJsbGV5IiwiYSI6ImNsMWhodDY3NjBjcmszaXB3OTMzemtkbXYifQ.pJeHvUL0LGZGu3YSeVDPjA';
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/remeliashirlley/cl1hi0m82001k15rjscjy23l1', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+        });
+    </script>
 
     <section class="grid">
         <div class="image">
