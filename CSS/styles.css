@@ -8,10 +8,25 @@ body{
   font-family:Verdana; /*rgba(20,27,35,0,6); blue*/
 }
 
-#logo {
+.logo {
   color:rgb(255,255,255);
-  font-family:crimson pro; font-size: 30px;
-  padding-top: 5px; padding-left: 30px;
+  width: 50px;
+  padding-top: 2px; padding-left: 30px;
+}
+.logo span {
+  display: inline-block;
+  font-family:crimson pro; font-size: 25px;
+  letter-spacing: -5px;
+  font-weight:bold;
+  animation: flip 3s;
+  animation-iteration-count: 1;
+  animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
 }
 
 nav {
@@ -23,8 +38,8 @@ nav {
 
 #linked{
   background-color:rgba(20,27,35,1);
-  top:0;
-  padding-top: 4px; padding-bottom:4px;
+  top:0px;
+  padding-top: 10px; padding-bottom:10px; 
 }
 
 .nav-content li {
@@ -100,6 +115,19 @@ footer{
   width:100%;
   /* margin-left: 25%; */
 }
+
+#head-soc ul li {list-style :none; padding: 0 0 0 12px; float: right;}
+#head-soc ul li a {text-indent: -9999px; font-size: 0; line-height: 0; overflow: hidden ; height: 32px; width: 32px ;border: 0; background: url(images/social-media.gif) no-repeat; display: block;}
+
+#head-soc li#g a {background-position: 0px 0px;}
+#head-soc li#g a:hover {background-position: 0px -32px;}
+
+#head-soc li#rss a {background-position: -32px 0px;}
+#head-soc li#rss a:hover {background-position: -32px -32px;}
+
+#head-soc li#sub a {background-position: -64px 0px;}
+#head-soc li#sub a:hover {background-position: -64px -32px;}
+
 
 /* ----------------------------Mobile query--------------------------- */
 @media screen and (min-width:100px) {
@@ -188,6 +216,10 @@ footer{
 
 /* ---------------------------Desktop query--------------------------- */
 @media screen and (min-width:1400px){
+
+  #linked .nav-content {
+    padding-top:10px;
+  }
 
   .navbtn {
     display: none;
