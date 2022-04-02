@@ -215,6 +215,8 @@ i{
   20% {transform: translateY(-20px)}
 }
 
+/* ----------------------------Map--------------------------- */
+#map { position: absolute; top: 0; height:500px; width: 100%; }
 
 /* ----------------------------Mobile query--------------------------- */
 @media screen and (min-width:100px) {

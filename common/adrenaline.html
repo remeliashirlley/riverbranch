@@ -10,10 +10,6 @@
     <!-- <script src="../js/map.js"></script> -->
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
-    <style>
-        body { margin: 0; padding: 0; }
-        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
-    </style>
 </head>
 <body>
     <nav id="linked">
@@ -39,8 +35,16 @@
         container: 'map', // container ID
         style: 'mapbox://styles/remeliashirlley/cl1hvyabj00bk14s91zmzkrqz', // style URL
         center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9 // starting zoom
+        zoom: 0 // starting zoom
         });
+        const popup = new mapboxgl.Popup({ offset: 20 }).setText(
+        'Construction on the Washington Monument began in 1848.'
+        );
+        const marker = new mapboxgl.Marker({
+        color: "rgb(214, 201, 177)"
+        }).setLngLat([30.5, 50.5])
+        .setPopup(popup) 
+        .addTo(map);
     </script>
 
     <section class="grid">
