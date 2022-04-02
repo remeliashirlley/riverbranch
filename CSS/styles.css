@@ -116,17 +116,10 @@ footer{
   /* margin-left: 25%; */
 }
 
-#head-soc ul li {list-style :none; padding: 0 0 0 12px; float: right;}
-#head-soc ul li a {text-indent: -9999px; font-size: 0; line-height: 0; overflow: hidden ; height: 32px; width: 32px ;border: 0; background: url(images/social-media.gif) no-repeat; display: block;}
-
-#head-soc li#g a {background-position: 0px 0px;}
-#head-soc li#g a:hover {background-position: 0px -32px;}
-
-#head-soc li#rss a {background-position: -32px 0px;}
-#head-soc li#rss a:hover {background-position: -32px -32px;}
-
-#head-soc li#sub a {background-position: -64px 0px;}
-#head-soc li#sub a:hover {background-position: -64px -32px;}
+.contact{
+  position:absolute;
+  top:50%;
+}
 
 
 /* ----------------------------Mobile query--------------------------- */
