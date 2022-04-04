@@ -273,7 +273,7 @@ i{
     display:grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
-      "mainimg"
+      /* "mainimg" */
       "placehold"
       "i1"
       "p1"
