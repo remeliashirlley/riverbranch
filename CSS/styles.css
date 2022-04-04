@@ -153,7 +153,7 @@ footer{
 /* ----------------------------Linked pages grid section--------------------------- */
 .grid {
   position:absolute;
-  top:500px;
+  top:1000px;
   padding:10px;
   padding-bottom: 50px;
   background-color: white;
@@ -216,7 +216,7 @@ i{
 }
 
 /* ----------------------------Map--------------------------- */
-#map { position: absolute; top: 0; height:500px; width: 100%; }
+#map { position: absolute; top: 0; height:1000px; width: 100%; }
 /* .marker {
   display: block;
   border: none;
