@@ -217,6 +217,13 @@ i{
 
 /* ----------------------------Map--------------------------- */
 #map { position: absolute; top: 0; height:500px; width: 100%; }
+/* .marker {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  } */
 
 /* ----------------------------Mobile query--------------------------- */
 @media screen and (min-width:100px) {
