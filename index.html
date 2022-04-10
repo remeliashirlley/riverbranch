@@ -10,6 +10,11 @@
     <script src="https://kit.fontawesome.com/25df7b319a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="loader-container">
+        <div class="loader"></div>
+        <div class="loadtext">RB</div>
+    </div>
+
     <nav>
         <div class="logo">
             <span style="--i:1">R</span>
@@ -86,6 +91,11 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
         <script src="js/parallax.js"></script>
+        <script>
+            $(window).on("load", function(){
+                $(".loader-container").fadeOut(1000);
+            });
+        </script>
     </main>
 </body>
 </html>
