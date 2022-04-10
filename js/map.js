@@ -167,3 +167,6 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmVtZWxpYXNoaXJsbGV5IiwiYSI6ImNsMWhodDY3NjBjc
             el.style.backgroundSize = '100%';
             new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).setPopup(popup).addTo(map);
         }
+
+        
+        map.flyTo({center: e.features[0].geometry.coordinates, zoom:10});
