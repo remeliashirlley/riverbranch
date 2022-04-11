@@ -191,6 +191,17 @@ header {
 }
 
 /* ----------------------------Home page grid section--------------------------- */
+.img-wrapper {
+  display: inline-block; /* change the default display type to inline-block */
+  overflow: hidden;      /* hide the overflow */
+}
+.img-wrapper img {
+  transition: all .2s ease;
+  vertical-align:middle;
+}
+
+.img-wrapper img:hover {transform: scale(1.1);}
+
 .para {
   padding-top:35%; padding-bottom:35%;
   text-align: center;
@@ -228,17 +239,18 @@ footer{
   overflow:hidden;
 }
 .image img{
-  margin-bottom: 10px;;
+  margin-bottom: -20px;
 }
 
 .image {transition: transform .3s;}
 .image img:hover {transform: scale(1.05);}
 
 .text{
+  position:relative;
   bottom:50px;
   text-align: center;
   font-size: 10px;
-  background-color:rgba(255,255,255,1);color:black;
+  background-color:red;color:black;
   width:100%;
 }
 
