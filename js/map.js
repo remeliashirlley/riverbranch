@@ -152,9 +152,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmVtZWxpYXNoaXJsbGV5IiwiYSI6ImNsMWhodDY3NjBjc
                 description: 'Surfing at Jeffreys Bay, South Africa',
                 image: 'https://raw.githubusercontent.com/remeliashirlley/riverbranch/main/images/jeffreys%20bay%2C%20south%20africa.jpg',
             }
-            },
+            }
         ]
-        };
+        }
 
         for (const feature of adrenalinejson.features) {
             const el = document.createElement('div');
@@ -168,5 +168,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicmVtZWxpYXNoaXJsbGV5IiwiYSI6ImNsMWhodDY3NjBjc
             new mapboxgl.Marker(el).setLngLat(feature.geometry.coordinates).setPopup(popup).addTo(map);
         }
 
-        
-        map.flyTo({center: e.features[0].geometry.coordinates, zoom:10});
+        el.addEventListener('click', function() {
+            map.flyTo({
+                    center: el.feature.geometry.coordinates,
+                    zoom:9
+                    });
+        });

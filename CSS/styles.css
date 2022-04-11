@@ -214,7 +214,11 @@ header {
 .para {
   text-justify: inter-word;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
+}
+
+
+.para p{
+  font-family: 'Cantarell', sans-serif;
 }
 
 #adrenalinepara {grid-area: p1;}
