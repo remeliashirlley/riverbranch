@@ -214,6 +214,7 @@ header {
 .para {
   text-justify: inter-word;
   text-align: center;
+  font-family: 'Indie Flower', cursive;
 }
 
 #adrenalinepara {grid-area: p1;}
