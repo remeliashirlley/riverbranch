@@ -233,25 +233,35 @@ footer{
   background-color: white;
 }
 
-.image{
-  display:inline-block;
-  margin-bottom: 10px;
-  overflow:hidden;
-}
 .image img{
-  margin-bottom: -20px;
+  margin-bottom: 10px;
 }
-
-.image {transition: transform .3s;}
-.image img:hover {transform: scale(1.05);}
 
 .text{
   position:relative;
-  bottom:50px;
   text-align: center;
   font-size: 10px;
-  background-color:red;color:black;
-  width:100%;
+  color:black;
+  background-color: white;
+  z-index:100;
+  bottom: 35px;
+  height:30px;
+  display:none;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 2px 5px 2px 5px;
+  
+}
+
+.image img:hover +.text{
+  display: inline-block;
+}
+
+.image img:hover{
+  margin-bottom: -24px;
 }
 
 /* ----------------------------Contact page external links--------------------------- */
