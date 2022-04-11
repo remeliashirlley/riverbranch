@@ -80,6 +80,15 @@ body{
   font-size: xx-large;
 }
 
+.scrollicon i{
+  position: absolute;
+  margin-top:40vh;
+  margin-left:50%;
+  left:-15px;
+  color:white;
+  font-size: xx-large;
+}
+
 
 /* ----------------------------Logo with animation--------------------------- */
 .logo {
@@ -203,7 +212,7 @@ header {
 .img-wrapper img:hover {transform: scale(1.1);}
 
 .para {
-  padding-top:35%; padding-bottom:35%;
+  text-justify: inter-word;
   text-align: center;
 }
 
@@ -351,6 +360,10 @@ i{
   }
   .grid{
     column-count:2;}
+
+  .para{
+    padding:35% 100px 35% 100px;
+  }
 }
 
 /* ----------------------------Tablet query--------------------------- */
@@ -367,6 +380,8 @@ i{
       "foot foot";
   }
   .grid{column-count:3;}
+
+  .para{ padding:25% 10px 25% 10px;}
 }
 
 /* ---------------------------Desktop query--------------------------- */
@@ -396,5 +411,10 @@ i{
   }
 
   .nav-content a:hover {border-style: solid; border-width: 1px;}
+
   .grid{column-count:4;}
+
+  .para{
+    padding:35% 200px 35% 200px;
+  }
 }
