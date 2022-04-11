@@ -14,9 +14,15 @@
         <div class="loader"></div>
         <div class="loadtext">RB</div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+    <script>
+        $(window).on("load", function(){
+            $(".loader-container").fadeOut(1000);
+        });
+    </script>
 
     <nav>
-        <div class="logo">
+        <div class="logo" style="cursor: pointer;" onclick="window.location='index.html';">
             <span style="--i:1">R</span>
             <span style="--i:2">B</span>
         </div>
@@ -31,6 +37,17 @@
             <li><a href="common/contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <div class="audioicon" onclick="playpause()"><i class="fa-solid fa-circle-play"></i></div>
+    <audio id="backgroundmusic" src="Smokey Eye - Cheel.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        var backgroundmusic=document.getElementById("backgroundmusic");
+        function playpause(){
+            $('.audioicon').find("i").toggleClass("fa-circle-play fa-circle-pause");
+            backgroundmusic.paused ? backgroundmusic.play() : backgroundmusic.pause();
+        }
+    </script>
 
     <section class="home-hero parallax--bg">
         <header>
@@ -48,6 +65,7 @@
             </section>
         </header>
     </section>
+    <script src="js/parallax.js"></script>
     
     <main>
         <section class="placeholder">
@@ -84,18 +102,9 @@
             <h5>RB</h5>
         </footer>
 
-        <audio src="Lights - Patrick Patrikios.mp3" type="audio/mpeg" controls autoplay>
-            <!-- <source src="horse.ogg" type="audio/ogg"> -->
-          Your browser does not support the audio element.
-        </audio>
-
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
-        <script src="js/parallax.js"></script>
-        <script>
-            $(window).on("load", function(){
-                $(".loader-container").fadeOut(1000);
-            });
-        </script>
+        
+        
+        
     </main>
 </body>
 </html>

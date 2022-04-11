@@ -9,6 +9,8 @@ body{
   font-family:Verdana; /*rgba(20,27,35,0,6); blue*/
 }
 
+/* ----------------------------Loading screen--------------------------- */
+
 .loader-container{
   width:100%;
   height:100vh;
@@ -61,12 +63,21 @@ body{
 /* ----------------------------Background image for home page--------------------------- */
 
 .home-hero {
-	background-image: url(../images/adrien-delforge.jpg);
+	background-image: url(../images/adrien-delforge-GTNaEBVznRs-unsplash.jpg);
 	background-size: cover;
 	background-position: center;
-  height:13vh;
+  height:30vh;
+  width:100%;
 	padding: 25em 0;
 	color: #FFF;
+}
+
+.audioicon i{
+  position: absolute;
+  right:50px;
+  margin-top: 40vh;
+  color:white;
+  font-size: xx-large;
 }
 
 
