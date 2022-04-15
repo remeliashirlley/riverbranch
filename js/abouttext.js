@@ -1,4 +1,4 @@
-consoleText(['Adventure', 'Full-stack development', 'Travel', 'Machine Learning'], 'text',['crimson','rebeccapurple','black']);
+consoleText(['Adventure', 'Full-stack development', 'Travel', 'Machine Learning'], 'text',['black']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
