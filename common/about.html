@@ -32,6 +32,57 @@
         </ul>
     </nav>
 
+    <div class="outer-container">
+        <div class="image-container" style="background-image: url('https://github.com/remeliashirlley/riverbranch/blob/main/images/IMG_2475_01.png?raw=true');">
+          <h2 class="section-title on-dark">
+            <span class="paralax-title">
+              About the Developer
+            </span>
+          </h2>
+        </div>
+        
+        <h2 class="section-title">
+          <span class="paralax-title">
+            About the Developer
+          </span>
+        </h2>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+
+    <script src="../js/abouttext.js"></script>
+
+    <section class="aboutdev">
+        <p>
+            I am Shirlley, a year 2 undergraduate in NTU studying Computer Engineering. I’m an aspiring software developer looking to work on full-stack development and AI. I’m experienced with several programming languages such as Python, C, C++, Java and VBA. I’m also proficient in HTML, CSS and jQuery. Some of the relevant modules I have take include object-oriented programming and Design, operating systems, Algorithm Design and Analysis, Introduction to Data Science and AI and Web Design. I have also previously interned with Murata last summer and some of the projects I have worked on include the Shift Report, Shift Pattern and CSAM project. 
+            
+            I’ve worked on several projects over my course of study. I’m currently working on a web development project. It’s a travel inspiration website which features possible locations and activities that people can engage in across the world. The website has responsive design. </p>
+    </section>
+
+
+    <script>
+        let didScroll = false;
+        let paralaxTitles = document.querySelectorAll('.paralax-title');
+
+        const scrollInProgress = () => {
+        didScroll = true
+        }
+
+        const raf = () => {
+        if(didScroll) {
+            paralaxTitles.forEach((element, index) => {
+            element.style.transform = "translateX("+ window.scrollY / 10 + "%)"
+            })
+            didScroll = false;
+        }
+        requestAnimationFrame(raf);
+        }
+
+        requestAnimationFrame(raf);
+        window.addEventListener('scroll', scrollInProgress)
+    </script>
 
     <footer>
         <h5>RB</h5>
