@@ -115,7 +115,7 @@ nav {
   position: absolute;
   top:10px; left:0%;
   height:35px; width:100%;
-  z-index:10000;
+  z-index:10000000;
 }
 
 #linked{
@@ -282,7 +282,7 @@ footer{
 
 
 #makapen_animation {
-  height:107vh;
+  height:110vh;
   width:auto;
 }
 
@@ -897,7 +897,7 @@ i{
     color:white;
     position: absolute;
     top:0; right:0;
-    width: 700px; height: auto;
+    width: 800px; height: auto;
   } 
 
   .nav-content li {
