@@ -6,7 +6,9 @@
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>RiverBranch - About</title>
     <link rel="icon" type="image/png" href="../images/favicon_io/android-chrome-512x512.png">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css"><link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="loader-container">
@@ -32,54 +34,91 @@
         </ul>
     </nav>
 
+    <section class="abouttitle">
+        <h1>GET TO KNOW MORE ABOUT US</h1>
+    </section>
+
+    <section class="abouttitlevert">
+        <h1>RIVERBRAN&nbsp;&nbsp;&nbsp;&nbsp;H</h1>
+    </section>
+
+    <div class="parallax">
+       <div id="group1" class="parallax__group">
+         <div class="parallax__layer parallax__layer--base">
+            <img src="../images/st peter's basilica, citta del vaticano, vatican city.jpg" alt="Hot air balloon" Style="height:auto;width:20%;";>
+           <div class="group1_green"><img src="../images/sea cliff bridge, clifton, aus.jpg" alt="Hot air balloon" Style="height:auto;width:30%;";></div>
+         </div>
+       </div>
+   
+       <div id="group2" class="parallax__group">
+         <div class="parallax__layer parallax__layer--base">
+           <div class="group2_orange"><img src="../images/beaugrenelle, paris, france.jpg" alt="Hot air balloon" Style="height:auto;width:70%;";></div>
+         </div>
+         <div class="parallax__layer parallax__layer--back">
+           <div class="group2_blue"><img src="../images/stubai zoo, neustift im stubaital, austria.jpg" alt="Hot air balloon" Style="height:auto;width:60%;";></div>
+         </div>
+         <div class="parallax__layer parallax__layer--deep">
+           <div class="group2_yellow"><img src="../images/saffron & rose, campus drive, irvine , ca, usa.jpg" alt="Hot air balloon" Style="height:auto;width:80%;";></div>        
+         </div>
+       </div>
+   
+       <div id="group3" class="parallax__group">
+         <div class="parallax__layer parallax__layer--fore">
+           <div class="group3_blueSmall"><img src="../images/millenium bridge, london, royaume-uni.jpg" alt="Hot air balloon" Style="height:auto;width:20%;";></div>
+         </div>
+         <div class="parallax__layer parallax__layer--base">
+           <div class="group3_red"><img src="../images/confrides, spain.jpg" alt="Hot air balloon" Style="height:auto;width:45%;";></div>
+         </div>
+       </div>
+       
+      <div id="group4" class="parallax__group">
+         <div class="parallax__layer parallax__layer--base">
+           <div class="group4_orange"><img src="../images/dubai marina, dubai, uae.jpg" alt="Hot air balloon" Style="height:auto;width:90%;";></div>        
+         </div>
+         <div class="parallax__layer parallax__layer--back">
+           <div class="group4_green"><img src="../images/christmas market, ediburgh, uk, .jpg" alt="Hot air balloon" Style="height:auto;width:20%;";></div>      
+         </div>
+       </div>
+    </div>
+
+    <div class="container" speed=20>
+        <div class='scrolling-text'>
+          <h2 class="scrolling-text-content">Learn more about RiverBranch and its developer. Learn more about RiverBranch and its developer. Learn more about RiverBranch and its developer. Learn more about RiverBranch and its developer.</h2>
+        </div>
+      </div>
+      <div class="container left-to-right" speed=60>
+        <div class='scrolling-text'>
+          <h2 class="scrolling-text-content">Learn more about RiverBranch and its developer. Learn more about RiverBranch and its developer. Learn more about RiverBranch and its developer. Learn more about RiverBranch and its developer.</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class='scrolling-text'>
+          <h2 class="scrolling-text-content">Learn more about RiverBranch and its developer. Learn more about RiverBranch and its developer. Learn more about RiverBranch and its developer. Learn more about RiverBranch and its developer.</h2>
+        </div>
+      </div>
+
+      
     <div class="outer-container">
         <div class="image-container" style="background-image: url('https://github.com/remeliashirlley/riverbranch/blob/main/images/IMG_2475_01.png?raw=true');">
           <h2 class="section-title on-dark">
-            <span class="paralax-title">
-              About the Developer
-            </span>
+            <span class="paralax-title">About the Developer</span>
           </h2>
         </div>
         
         <h2 class="section-title">
-          <span class="paralax-title">
-            About the Developer
-          </span>
+          <span class="paralax-title">About the Developer</span>
         </h2>
     </div>
 
     <div class="clearfix"></div>
 
+    <div id="interest"><h3>Talk to me about</h3></div>
+
     <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
 
-    <script src="../js/abouttext.js"></script>
-
     <section class="aboutdev">
-        <p>I am Shirlley, a Computer Engineering undergraduate at NTU. I’m an aspiring software developer looking to work on full-stack development and AI. I’m an adventurer and travel enthusiast. </p>
+        <p>I am Shirlley, a Computer Engineering undergraduate at NTU. I’m an adventurer and travel enthusiast. </p>
     </section>
-
-
-    <script>
-        let didScroll = false;
-        let paralaxTitles = document.querySelectorAll('.paralax-title');
-
-        const scrollInProgress = () => {
-        didScroll = true
-        }
-
-        const raf = () => {
-        if(didScroll) {
-            paralaxTitles.forEach((element, index) => {
-            element.style.transform = "translateX("+ window.scrollY / 10 + "%)"
-            })
-            didScroll = false;
-        }
-        requestAnimationFrame(raf);
-        }
-
-        requestAnimationFrame(raf);
-        window.addEventListener('scroll', scrollInProgress)
-    </script>
 
     <footer>
         <h5>RB</h5>
@@ -91,6 +130,10 @@
             $(".loader-container").fadeOut(1000);
         });
     </script>
+    <script src="../js/aboutparalax.js"></script>
+    <script src="../js/scrollingtext.js"></script>
+    <script src="../js/abouttext.js"></script>
+
 
 </body>
 </html>

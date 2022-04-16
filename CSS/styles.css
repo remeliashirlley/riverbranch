@@ -230,6 +230,7 @@ header {
 /* ----------------------------Footer--------------------------- */
 footer{
   position:fixed;
+  z-index:2000000;
   bottom:0;
   width:100%;
   text-align: center;
@@ -252,7 +253,7 @@ footer{
 }
 
 .image-container {
-  padding-bottom:100%;
+  padding-bottom:170%;
   background: black;
   position: relative;
   overflow: hidden;
@@ -268,7 +269,7 @@ footer{
   text-align: center;
   position: absolute;
   top: 50%;
-  left: -30%;
+  left: -190%;
   transform: translateY(-50%);
   z-index: 1;
   white-space: nowrap;
@@ -313,15 +314,176 @@ footer{
   left:10px;
 }
 
+/* /// */
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+  -webkit-perspective: 150px;
+  perspective: 150px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  right: 100px;
+  bottom: 0;
+}
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+
+
+/* style the groups
+--------------------------------------------- */
+
+#group1 {
+  z-index: 5; /* slide over group 2 */
+}
+
+.group1_green {
+  position: absolute;
+  top:40%;
+  left:30%;
+}
+
+#group2 {
+  z-index: 3; /* slide under groups 1 and 3 */
+}
+
+.group2_orange {
+  position: absolute;
+  left:75%;
+}
+
+.group2_blue {
+  position: absolute;
+  left:55%;
+}
+
+.group2_yellow {
+   position: absolute;
+  top:86%;
+  right:26%;  
+}
+
+#group3 {
+  z-index: 4; /* slide over group 2 and 4 */
+}
+.group3_blueSmall {
+  position: absolute;
+  top:45%;
+  left:25%; 
+}
+
+.group3_red {
+  position: absolute;
+  top:80%;
+  left:62%;
+}
+
+#group4 {
+  z-index: 2; /* slide under group 3 and 5 */
+}
+
+.group4_orange {
+  position: absolute;
+  top:80%;
+  left:78%;
+}
+
+.group4_green {
+  position: absolute;
+  top:55%;
+  left:50%;
+}
+
+.abouttitle{
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  font-size: xx-large;
+}
+
+.abouttitlevert{
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 325px;
+  right: 40px;
+  font-size: xx-large;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  display: inline-block;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.scrolling-text .scrolling-text-content {
+  color: black;
+  font-size: 30px;
+  white-space: nowrap;
+  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+  margin: 50px 0;
+}
+
+#interest{
+  font-family: 'Rock Salt', cursive;
+  font-size:xx-large;
+  text-align: center;
+}
+
+
 .aboutdev{
-  width:55%;
+  width:30%;
   background-color: rgb(20,27,35);
   padding: 30px 30px 30px 30px;
-  text-align: justify;
+  /* text-align: justify; */
   color:white;
-  margin-left: 4%;
-  margin-bottom: 100px;
+  position:relative;
+  /* top:-230px; */
+  z-index:3;
+  margin-left: 35%;
 }
+
+
 
 /* ----------------------------Linked pages grid section--------------------------- */
 .grid {
