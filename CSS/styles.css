@@ -1,139 +1,139 @@
 /* ----------------------------Default settings--------------------------- */
 * {
-    margin: 0;
-    padding: 0;  
-  }
+  margin: 0;
+  padding: 0;  
+}
 
 body{
-  color:rgb(22, 29, 32);
-  font-family: 'Montserrat', sans-serif;
+color:rgb(22, 29, 32);
+font-family: 'Montserrat', sans-serif;
 }
 
 /* ----------------------------Loading screen--------------------------- */
 .loader-container{
-  height:100vh;  width:100%;
-  background-color: rgb(20,27,35);
-  position:fixed;
-  z-index:1000000;
+height:100vh;  width:100%;
+background-color: rgb(20,27,35);
+position:fixed;
+z-index:1000000;
 }
 
 .loader{
-  height:200px; width:200px;
-  border: 5px solid; border-radius:50%; border-top-color:transparent;
-  position:absolute;
-  color:white;
-  margin-top: 50vh; margin-left:50%;
-  top:-100px; left:-100px;
-  animation: Loader 1.2s linear infinite;
+height:200px; width:200px;
+border: 5px solid; border-radius:50%; border-top-color:transparent;
+position:absolute;
+color:white;
+margin-top: 50vh; margin-left:50%;
+top:-100px; left:-100px;
+animation: Loader 1.2s linear infinite;
 }
 
 @keyframes Loader{to{transform:rotate(360deg);}}
 
 .loadtext{
-  position:absolute;
-  width:10px;
-  margin-top: 50vh; margin-left:50%;
-  top:-5px; left:-5px;
-  color:white;
-  font-family: crimson pro; font-size:20px; font-weight:bold;
-  animation: Loadtext 5s ease-in-out;
+position:absolute;
+width:10px;
+margin-top: 50vh; margin-left:50%;
+top:-5px; left:-5px;
+color:white;
+font-family: crimson pro; font-size:20px; font-weight:bold;
+animation: Loadtext 5s ease-in-out;
 }
 
 @keyframes Loadtext{
-  0% {opacity:0;}
-  100% {opacity:1;}
+0% {opacity:0;}
+100% {opacity:1;}
 }
 
 /* ----------------------------Background image for home page--------------------------- */
 .home-hero {
-	background-image: url(../images/adrien-delforge-GTNaEBVznRs-unsplash.jpg);
-	background-size: cover; background-position: center;
-  height:30vh; width:100%;
-	padding: 25em 0;
-	color: #FFF;
+background-image: url(../images/adrien-delforge-GTNaEBVznRs-unsplash.jpg);
+background-size: cover; background-position: center;
+height:30vh; width:100%;
+padding: 25em 0;
+color: #FFF;
 }
 
 .audioicon i{
-  position: absolute;
-  right:50px;
-  margin-top: 40vh;
-  color:white;
-  font-size: xx-large;
+position: absolute;
+right:50px;
+margin-top: 40vh;
+color:white;
+font-size: xx-large;
 }
 
 .scrollicon i{
-  position: absolute;
-  margin-top:40vh; margin-left:50%;
-  left:-15px;
-  color:white;
-  font-size: xx-large;
+position: absolute;
+margin-top:40vh; margin-left:50%;
+left:-15px;
+color:white;
+font-size: xx-large;
 }
 
 /* ----------------------------Logo with animation--------------------------- */
 .logo {
-  color:rgb(255,255,255);
-  width: 50px;
-  padding-top: 2px; padding-left: 30px;
+color:rgb(255,255,255);
+width: 50px;
+padding-top: 2px; padding-left: 30px;
 }
 
 .logo span {
-  display: inline-block;
-  font-family:crimson pro; font-size: 25px; font-weight:bold;
-  letter-spacing: -5px;
-  animation: flip 3s; 
-  animation-iteration-count: 1; 
-  animation-delay: calc(.2s * var(--i))
+display: inline-block;
+font-family:crimson pro; font-size: 25px; font-weight:bold;
+letter-spacing: -5px;
+animation: flip 3s; 
+animation-iteration-count: 1; 
+animation-delay: calc(.2s * var(--i))
 }
 
 @keyframes flip {0%,80% {transform: rotateY(360deg)}}
 
 /* ----------------------------Navigation bar--------------------------- */
 nav {
-  background-color:rgba(255,255,255,0); color:rgb(255,255,255);
-  position: absolute;
-  top:10px; left:0%;
-  height:35px; width:100%;
-  z-index:10000000;
+background-color:rgba(255,255,255,0); color:rgb(255,255,255);
+position: absolute;
+top:10px; left:0%;
+height:35px; width:100%;
+z-index:10000000;
 }
 
 #linked{
-  background-color:rgba(20,27,35,1);
-  top:0px;
-  padding-top: 10px; padding-bottom:10px; 
+background-color:rgba(20,27,35,1);
+top:0px;
+padding-top: 10px; padding-bottom:10px; 
 }
 
 .nav-content li {list-style-type: none;}
 
 .nav-content a {
-  text-decoration: none;
-  font-size: 12px; font-weight:bold;
-  display: block;
+text-decoration: none;
+font-size: 12px; font-weight:bold;
+display: block;
 }
 
 /* ----------------------------Home page header--------------------------- */
 header {
-  color:white;
-  position:absolute;
-  font-family: Verdana;font-weight: bold;
-  top:40vh; right:150px;
+color:white;
+position:absolute;
+font-family: Verdana;font-weight: bold;
+top:40vh; right:150px;
 }
 
 .rw-wrapper {
-  position:absolute;
-  font-family: Verdana;
-  top:30px; right: 10px;
+position:absolute;
+font-family: Verdana;
+top:30px; right: 10px;
 }
 
 .rw-words {
-  display: inline;
-  text-indent: 10px;
+display: inline;
+text-indent: 10px;
 }
 
 .rw-words-1 span {
-  position: absolute;
-  opacity: 0;
-  overflow: hidden;
-  animation: rotateWord 12s linear infinite 0s;
+position: absolute;
+opacity: 0;
+overflow: hidden;
+animation: rotateWord 12s linear infinite 0s;
 }
 
 .rw-words-1 span:nth-child(2) {-webkit-animation-delay: 3s; -ms-animation-delay: 3s; animation-delay: 3s;}
@@ -141,33 +141,33 @@ header {
 .rw-words-1 span:nth-child(4) {-webkit-animation-delay: 9s; -ms-animation-delay: 9s; animation-delay: 9s;}
 
 @keyframes rotateWord {
-  0% {opacity: 0;}
-  2% {opacity: 0;-webkit-transform: translateY(-30px);transform: translateY(-30px);}
-  5% {opacity: 1;-webkit-transform: translateY(0px);transform: translateY(0px);}
-  17% {opacity: 1;-webkit-transform: translateY(0px);transform: translateY(0px);}
-  20% {opacity: 0;-webkit-transform: translateY(30px);transform: translateY(30px);}
-  80% {opacity: 0;}
-  100% {opacity: 0;}
+0% {opacity: 0;}
+2% {opacity: 0;-webkit-transform: translateY(-30px);transform: translateY(-30px);}
+5% {opacity: 1;-webkit-transform: translateY(0px);transform: translateY(0px);}
+17% {opacity: 1;-webkit-transform: translateY(0px);transform: translateY(0px);}
+20% {opacity: 0;-webkit-transform: translateY(30px);transform: translateY(30px);}
+80% {opacity: 0;}
+100% {opacity: 0;}
 }
 
 /* ----------------------------Home page placeholder--------------------------- */
 .placeholder {
-  width:100%;
-  background-color: rgb(214, 201, 177);
-  font-size:15px;font-weight: bold;
-  text-align: center;
-  padding-top: 20px; padding-bottom: 20px;
-  grid-area: placehold;
+width:100%;
+background-color: rgb(214, 201, 177);
+font-size:15px;font-weight: bold;
+text-align: center;
+padding-top: 20px; padding-bottom: 20px;
+grid-area: placehold;
 }
 
 /* ----------------------------Home page grid section--------------------------- */
 .img-wrapper {
-  display: inline-block;
-  overflow: hidden;   
+display: inline-block;
+overflow: hidden;   
 }
 .img-wrapper img {
-  transition: all .2s ease;
-  vertical-align:middle;
+transition: all .2s ease;
+vertical-align:middle;
 }
 .img-wrapper img:hover {transform: scale(1.1);}
 
@@ -181,50 +181,50 @@ header {
 
 /* ----------------------------Footer--------------------------- */
 footer{
-  position:fixed;
-  z-index:2000000;
-  bottom:0;
-  width:100%;
-  text-align: center;
-  background-color:rgba(20,27,35,1); color:rgb(255,255,255);
-  font-family:crimson pro; font-size: 30px;
-  padding-top:5px; padding-bottom:5px;
-  grid-area:foot;
+position:fixed;
+z-index:2000000;
+bottom:0;
+width:100%;
+text-align: center;
+background-color:rgba(20,27,35,1); color:rgb(255,255,255);
+font-family:crimson pro; font-size: 30px;
+padding-top:5px; padding-bottom:5px;
+grid-area:foot;
 }
 
 /* ----------------------------About section--------------------------- */
 .parallax {
-  height: 1000px;
-  overflow-x: hidden; overflow-y: visible;
-  -webkit-perspective: 150px; perspective: 150px;
+height: 1000px;
+overflow-x: hidden; overflow-y: visible;
+-webkit-perspective: 150px; perspective: 150px;
 }
 
 .parallax__group {
-  position: relative;
-  height: 1000px;
-  -webkit-transform-style: preserve-3d; transform-style: preserve-3d;
+position: relative;
+height: 1000px;
+-webkit-transform-style: preserve-3d; transform-style: preserve-3d;
 }
 
 .parallax__layer {
-  position: absolute;
-  top: 70px; left: 100px; right: 100px; bottom: 0;
+position: absolute;
+top: 70px; left: 100px; right: 100px; bottom: 0;
 }
 
 .parallax__layer--fore {
-  -webkit-transform: translateZ(90px) scale(.7); transform: translateZ(90px) scale(.7);
-  z-index: 1;
+-webkit-transform: translateZ(90px) scale(.7); transform: translateZ(90px) scale(.7);
+z-index: 1;
 }
 .parallax__layer--base {
-  -webkit-transform: translateZ(0); transform: translateZ(0);
-  z-index: 4;
+-webkit-transform: translateZ(0); transform: translateZ(0);
+z-index: 4;
 }
 .parallax__layer--back {
-  -webkit-transform: translateZ(-300px) scale(2); transform: translateZ(-300px) scale(2);
-  z-index: 3;
+-webkit-transform: translateZ(-300px) scale(2); transform: translateZ(-300px) scale(2);
+z-index: 3;
 }
 .parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3); transform: translateZ(-600px) scale(3);
-  z-index: 2;
+-webkit-transform: translateZ(-600px) scale(3); transform: translateZ(-600px) scale(3);
+z-index: 2;
 }
 
 #group1 {z-index: 5;}
@@ -246,124 +246,124 @@ footer{
 
 .abouttitle{position: absolute;}
 .abouttitlevert{
-  position: absolute;
-  transform: rotate(-90deg);
+position: absolute;
+transform: rotate(-90deg);
 }
 
 .container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+position: relative;
+width: 100%;
+overflow: hidden;
 }
 
 .scrolling-text {
-  display: inline-block;
-  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
-  will-change: transform;
-  backface-visibility: hidden;
+display: inline-block;
+transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+will-change: transform;
+backface-visibility: hidden;
 }
 
 .scrolling-text .scrolling-text-content {
-  color: black;
-  font-size: 30px;
-  white-space: nowrap;
-  transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
-  margin: 50px 0;
+color: black;
+font-size: 30px;
+white-space: nowrap;
+transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+margin: 50px 0;
 }
 
 .outer-container {
-  /* max-width: 600px; */
-  margin: auto;
-  width: 500px;
-  padding: 200px 0px;
-  position:absolute;
-  top:1200px;
+/* max-width: 600px; */
+margin: auto;
+width: 500px;
+padding: 200px 0px;
+position:absolute;
+top:1200px;
 }
 
 .image-container {
-  padding-bottom:170%;
-  background: black;
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-  background-size: cover; background-position: center;
+padding-bottom:170%;
+background: black;
+position: relative;
+overflow: hidden;
+z-index: 2;
+background-size: cover; background-position: center;
 }
 
 .section-title {
-  margin: 0;
-  font-size: 64px;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 50%; left: -190%;
-  transform: translateY(-50%);
-  z-index: 1;
-  white-space: nowrap;
+margin: 0;
+font-size: 64px;
+width: 100%;
+text-align: center;
+position: absolute;
+top: 50%; left: -190%;
+transform: translateY(-50%);
+z-index: 1;
+white-space: nowrap;
 }
 
 .on-dark {color: white;}
 
 .section-title span {
-  margin-top: 25%;
-  position: relative;
-  display: block;
+margin-top: 25%;
+position: relative;
+display: block;
 }
 
 .aboutdev{
-  width:270px;
-  padding: 30px 30px 30px 30px;
-  background-color: rgb(20,27,35);
-  text-align: justify;
-  color:white;
-  position:absolute;
-  margin-left:30vw;
-  z-index:30;
+width:270px;
+padding: 30px 30px 30px 30px;
+background-color: rgb(20,27,35);
+text-align: justify;
+color:white;
+position:absolute;
+margin-left:30vw;
+z-index:30;
 }
 
 #interest{
-  font-family: 'Rock Salt', cursive; font-size:xx-large;
-  position:absolute;
-  height:100px; width:100%;
-  text-align: center;
+font-family: 'Rock Salt', cursive; font-size:xx-large;
+position:absolute;
+height:100px; width:100%;
+text-align: center;
 }
 
 .console-container {
-  font-size:40px;
-  text-align:center;
-  height:200px; width:100%;
-  display:block;
-  position:absolute;
-  color:black;
-  margin:auto;
+font-size:40px;
+text-align:center;
+height:200px; width:100%;
+display:block;
+position:absolute;
+color:black;
+margin:auto;
 }
 .console-underscore {
-  display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
+display:inline-block;
+position:relative;
+top:-0.14em;
+left:10px;
 }
 
 /* ----------------------------Linked pages grid section--------------------------- */
 .grid {
-  position:absolute;
-  top:60px;
-  padding:10px; padding-bottom: 50px;
-  background-color: white;
+position:absolute;
+top:60px;
+padding:10px; padding-bottom: 50px;
+background-color: white;
 }
 
 .text{
-  position:relative;
-  text-align: center;
-  font-size: 10px;
-  background-color: white; color:black;
-  z-index:100;
-  height:30px;
-  display:none;
-  margin: 0;
-  top: 50%; left: 50%; bottom: 35px;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding: 2px 5px 2px 5px;
+position:relative;
+text-align: center;
+font-size: 10px;
+background-color: white; color:black;
+z-index:100;
+height:30px;
+display:none;
+margin: 0;
+top: 50%; left: 50%; bottom: 35px;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+padding: 2px 5px 2px 5px;
 }
 
 .image img{margin-bottom: 10px;}
@@ -372,8 +372,8 @@ footer{
 
 /* ----------------------------Contact page external links--------------------------- */
 #makapen_animation {
-  width:100%;
-  height:100vh;
+width:100%;
+height:100vh;
 }
 
 .contactanimation{background-color: rgb(20,27,35);}
@@ -381,348 +381,348 @@ footer{
 .op {opacity:0;}
 
 #sky {
-  opacity: 0;
-  animation: sky-sea_animation 2s linear;
-  animation-fill-mode:forwards;
+opacity: 0;
+animation: sky-sea_animation 2s linear;
+animation-fill-mode:forwards;
 }
 
 #sun {
-  opacity: 0;
-  transform: scale(1);
-  animation: sun_animation 3s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 2.5s;
+opacity: 0;
+transform: scale(1);
+animation: sun_animation 3s linear;
+animation-fill-mode: forwards;
+animation-delay: 2.5s;
 }
 
 #spin {
-  transform-origin: 50% 50%;
-  animation: sun_spin 30s linear infinite reverse;
+transform-origin: 50% 50%;
+animation: sun_spin 30s linear infinite reverse;
 }
 
 #sea {
-  opacity: 0;
-  animation: sky-sea_animation 2s linear;
-  animation-fill-mode:forwards;
+opacity: 0;
+animation: sky-sea_animation 2s linear;
+animation-fill-mode:forwards;
 }
 
 #sky_wave {
-  opacity: 0;
-  animation: sky_waves_animation 1s linear;
-  animation-fill-mode:forwards;
-  animation-delay: 0.5s;
+opacity: 0;
+animation: sky_waves_animation 1s linear;
+animation-fill-mode:forwards;
+animation-delay: 0.5s;
 }
 
 #cloud {
-  opacity: 0;
-  animation: cloud_appear 3s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 2.5s;
+opacity: 0;
+animation: cloud_appear 3s linear;
+animation-fill-mode: forwards;
+animation-delay: 2.5s;
 }
 
 .cloud_op1 {
-  position: absolute;
-  transform: translateX(-80vw);
-  animation: cloud_1 25s linear infinite;
+position: absolute;
+transform: translateX(-80vw);
+animation: cloud_1 25s linear infinite;
 }
 .cloud_op2 {
-  position: absolute;
-  transform: translateX(-90vw);
-  animation: cloud_2 30s linear infinite;
+position: absolute;
+transform: translateX(-90vw);
+animation: cloud_2 30s linear infinite;
 }
 .cloud_op3 {
-  position: absolute;
-  transform: translate(-20vw);
-  animation: cloud_3 35s linear infinite;
+position: absolute;
+transform: translate(-20vw);
+animation: cloud_3 35s linear infinite;
 }
 .cloud_op4 {
-  position: absolute;
-  transform: translate(-25vw);
-  animation: cloud_4 45s linear infinite;
+position: absolute;
+transform: translate(-25vw);
+animation: cloud_4 45s linear infinite;
 }
 .cloud_op5 {
-  position: absolute;
-  transform: translate(-50vw);
-  animation: cloud_5 20s linear infinite;
+position: absolute;
+transform: translate(-50vw);
+animation: cloud_5 20s linear infinite;
 }
 .cloud_op6 {
-  position: absolute;
-  transform: translate(-70vw);
-  animation: cloud_6 60s linear infinite;
+position: absolute;
+transform: translate(-70vw);
+animation: cloud_6 60s linear infinite;
 }
 
 #mountain_plan_1_1 {
-  opacity: 1;
-  transform: scale(0);
-  transform-origin: 50% 100%;
-  animation: main_mountain_pr 1s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
+opacity: 1;
+transform: scale(0);
+transform-origin: 50% 100%;
+animation: main_mountain_pr 1s linear;
+animation-fill-mode: forwards;
+animation-delay: 2s;
 }
 #mountain_plan_1_2 {
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation: main_mountain_pr 1s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 2s;
+transform: scale(0);
+transform-origin: 50% 50%;
+animation: main_mountain_pr 1s linear;
+animation-fill-mode: forwards;
+animation-delay: 2s;
 }
 #mountain_plan_2_1 {
-  opacity: 0;
-  transform: scale(0);
-  transform-origin: 50% 100%;
-  animation: main_mountain 1s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 1.8s;
+opacity: 0;
+transform: scale(0);
+transform-origin: 50% 100%;
+animation: main_mountain 1s linear;
+animation-fill-mode: forwards;
+animation-delay: 1.8s;
 }
 #mountain_plan_2_2 {
-  transform: scale(0);
-  transform-origin: 50% 50%;
-  animation: main_mountain_reflect 1s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 1.8s;
+transform: scale(0);
+transform-origin: 50% 50%;
+animation: main_mountain_reflect 1s linear;
+animation-fill-mode: forwards;
+animation-delay: 1.8s;
 }
 #main_mountain_left {
-  transform: scale(0);
-  transform-origin: 50% 100%;
-  animation: main_mountain_first 1s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 3.8s;
+transform: scale(0);
+transform-origin: 50% 100%;
+animation: main_mountain_first 1s linear;
+animation-fill-mode: forwards;
+animation-delay: 3.8s;
 }
 #main_mountain_right {
-  transform: scale(0);
-  transform-origin: 50% 100%;
-  animation: main_mountain_first 1s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 3.8s;
+transform: scale(0);
+transform-origin: 50% 100%;
+animation: main_mountain_first 1s linear;
+animation-fill-mode: forwards;
+animation-delay: 3.8s;
 }
 
 #boats {
-  opacity: 0;
-  animation: boats 3s linear;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
+opacity: 0;
+animation: boats 3s linear;
+animation-delay: 4s;
+animation-fill-mode: forwards;
 }
 #small_boat {
-  transform-origin: 50% 50%;
-  animation: small_boat 5s linear infinite alternate;
-  animation-delay: 4.2s;
-  animation-fill-mode: forwards;
+transform-origin: 50% 50%;
+animation: small_boat 5s linear infinite alternate;
+animation-delay: 4.2s;
+animation-fill-mode: forwards;
 }
 #medium_boat {
-  transform-origin: 50% 50%;
-  animation: medium_boat 6s linear infinite alternate;
-  animation-delay: 4.2s;
-  animation-fill-mode: forwards;
+transform-origin: 50% 50%;
+animation: medium_boat 6s linear infinite alternate;
+animation-delay: 4.2s;
+animation-fill-mode: forwards;
 }
 #large_boat {
-  transform-origin: 50% 50%;
-  animation: large_boat 7s linear infinite alternate;
-  animation-delay: 4.2s;
-  animation-fill-mode: forwards;
+transform-origin: 50% 50%;
+animation: large_boat 7s linear infinite alternate;
+animation-delay: 4.2s;
+animation-fill-mode: forwards;
 }
 
 #home_on_the_mountain {
-  transform: scale(0);
-  transform-origin: 50% 100%;
-  animation: home_left 1s linear;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
+transform: scale(0);
+transform-origin: 50% 100%;
+animation: home_left 1s linear;
+animation-delay: 5s;
+animation-fill-mode: forwards;
 }
 #home_cable_way {
-  transform: scale(0);
-  transform-origin: 50% 100%;
-  animation: home_left 1s linear;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
+transform: scale(0);
+transform-origin: 50% 100%;
+animation: home_left 1s linear;
+animation-delay: 5s;
+animation-fill-mode: forwards;
 }
 #cableway_direction {
-  opacity: 0;
-  animation: line 1s linear;
-  animation-delay: 6s;
-  animation-fill-mode: forwards;
+opacity: 0;
+animation: line 1s linear;
+animation-delay: 6s;
+animation-fill-mode: forwards;
 }
 #fall {
-  opacity: 0;
-  animation: cloud_appear 2s linear;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
+opacity: 0;
+animation: cloud_appear 2s linear;
+animation-delay: 5s;
+animation-fill-mode: forwards;
 }
 #fall_animation {
-  animation: translate_fall 10s linear infinite alternate;
-  animation-delay: 5s;
+animation: translate_fall 10s linear infinite alternate;
+animation-delay: 5s;
 }
 
 #vehicule {
-  opacity: 0;
-  animation: cloud_appear 0.2s linear;
-  animation-delay: 6.5s;
-  animation-fill-mode: forwards;
+opacity: 0;
+animation: cloud_appear 0.2s linear;
+animation-delay: 6.5s;
+animation-fill-mode: forwards;
 }
 
 #cable_car {
-  position: absolute;
-  transform-origin: 50% 50%;
-  transform: translateX(-370px) translateY(-274px) rotate(16deg);
+position: absolute;
+transform-origin: 50% 50%;
+transform: translateX(-370px) translateY(-274px) rotate(16deg);
 }
 
 #hike_men {
-  transform: translateX(-130px);
-  animation: hike 5s linear;
-  animation-delay: 5.5s;
+transform: translateX(-130px);
+animation: hike 5s linear;
+animation-delay: 5.5s;
 }
 
 #victory_men {
-  opacity: 0;
-  animation: cloud_appear 3s linear;
-  animation-delay: 20s;
-  animation-fill-mode: forwards;
+opacity: 0;
+animation: cloud_appear 3s linear;
+animation-delay: 20s;
+animation-fill-mode: forwards;
 }
 
 #victory {
-  transform: translateX(-85px);
-  animation: victory 2s linear;
-  animation-delay: 21s;
-  animation-fill-mode: forwards;
+transform: translateX(-85px);
+animation: victory 2s linear;
+animation-delay: 21s;
+animation-fill-mode: forwards;
 }
 
 #flag {
-  transform-origin: 100% 100%;
-  transform: scale(0);
-  animation: flag 2s linear;
-  animation-delay: 21.5s;
-  animation-fill-mode:forwards;
+transform-origin: 100% 100%;
+transform: scale(0);
+animation: flag 2s linear;
+animation-delay: 21.5s;
+animation-fill-mode:forwards;
 }
 
 @keyframes sun_animation {
-  from {
-    opacity: 0;
-    transform: rotate(90deg);
-  }
-  
-  to {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
+from {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+to {
+  opacity: 1;
+  transform: rotate(0deg);
+}
 }
 
 @keyframes cloud_appear {
-  from {opacity: 0;}
-  to {opacity: 1;}
+from {opacity: 0;}
+to {opacity: 1;}
 }
 
 @keyframes cloud_1 {
-  from {transform: translateX(-80vw);}
-  to {transform: translate(20vw);}
+from {transform: translateX(-80vw);}
+to {transform: translate(20vw);}
 }
 @keyframes cloud_2 {
-  from {transform: translateX(-90vw);}
-  to {transform: translateX(10vw);}
+from {transform: translateX(-90vw);}
+to {transform: translateX(10vw);}
 }
 @keyframes cloud_3 {
-  from {transform: translate(-20vw);}
-  to {transform: translate(80vw);}
+from {transform: translate(-20vw);}
+to {transform: translate(80vw);}
 }
 @keyframes cloud_4 {
-  from {transform: translate(-25vw);}
-  to {transform: translate(60vw);}
+from {transform: translate(-25vw);}
+to {transform: translate(60vw);}
 }
 @keyframes cloud_5 {
-  from {transform: translate(-50vw);}
-  to {transform: translate(50vw);}
+from {transform: translate(-50vw);}
+to {transform: translate(50vw);}
 }
 @keyframes cloud_6 {
-  from {transform: translate(-70vw);}
-  to {transform: translate(25vw);}
+from {transform: translate(-70vw);}
+to {transform: translate(25vw);}
 }
 
 @keyframes sun_spin {
-  100% {transform:rotate(360deg);}
+100% {transform:rotate(360deg);}
 }
 @keyframes sky-sea_animation {
-  from {opacity: 0;}
-  to {opacity: 1;}
+from {opacity: 0;}
+to {opacity: 1;}
 }
 @keyframes sky_waves_animation {
-  from {opacity: 0;}
-  to {opacity: 1;}
+from {opacity: 0;}
+to {opacity: 1;}
 }
 
 @keyframes main_mountain {
-  from {
-    opacity: 0;
-    transform: scale(0);
-  }
-  
-  to {
-  opacity: 1;
-  transform: scale(1);
-  }
+from {
+  opacity: 0;
+  transform: scale(0);
+}
+
+to {
+opacity: 1;
+transform: scale(1);
+}
 }
 
 @keyframes main_mountain_reflect {
-  from {transform: scale(0);}
-  to {transform: scale(1);}
+from {transform: scale(0);}
+to {transform: scale(1);}
 }
 @keyframes main_mountain_pr {
-  from {transform: scale(0);}
-  to {transform: scale(1);}
+from {transform: scale(0);}
+to {transform: scale(1);}
 }
 @keyframes main_mountain_first {
-  from {transform: scale(0);}
-  to {transform: scale(1);}
+from {transform: scale(0);}
+to {transform: scale(1);}
 }
 
 @keyframes boats {
-  from {opacity: 0;}
-  to {opacity: 1;}
+from {opacity: 0;}
+to {opacity: 1;}
 }
 @keyframes small_boat {
-  from {transform: rotate(-3deg) translateX(6px) translateY(1px);}
-  to {transform: rotate(3deg) translateX(6px) translateY(1px);}
+from {transform: rotate(-3deg) translateX(6px) translateY(1px);}
+to {transform: rotate(3deg) translateX(6px) translateY(1px);}
 }
 @keyframes medium_boat {
-  from {transform: rotate(-4deg) translateX(8px) translateY(3px);}
-  to {transform: rotate(4deg) translateX(8px) translateY(3px);}
+from {transform: rotate(-4deg) translateX(8px) translateY(3px);}
+to {transform: rotate(4deg) translateX(8px) translateY(3px);}
 }
 @keyframes large_boat {
-  from {transform: rotate(-5deg) translateX(-10px) translateY(-5px);}
-  to {transform: rotate(5deg) translateX(10px) translateY(5px);}
+from {transform: rotate(-5deg) translateX(-10px) translateY(-5px);}
+to {transform: rotate(5deg) translateX(10px) translateY(5px);}
 }
 
 @keyframes home_left {
-  from {transform: scale(0);} 
-  to {transform: scale(1);}
+from {transform: scale(0);} 
+to {transform: scale(1);}
 }
 
 @keyframes line {
-  from {opacity: 0;}
-  to {opacity: 1;}
+from {opacity: 0;}
+to {opacity: 1;}
 }
 @keyframes translate_fall {
-  from {transform: translateY(-10px);}
-  to {transform: translateY(10px);}
+from {transform: translateY(-10px);}
+to {transform: translateY(10px);}
 }
 @keyframes cable_car {
-  0% {transform: translateX(-300px) translateY(55px) rotate(8deg);}
-  100% {transform: translateX(450px) translateY(-180px) rotate(-3deg);}
+0% {transform: translateX(-300px) translateY(55px) rotate(8deg);}
+100% {transform: translateX(450px) translateY(-180px) rotate(-3deg);}
 }
 
 @keyframes hike {
-  from {transform: translateX(-130px);}
-  to {transform: translateX(235px);}
+from {transform: translateX(-130px);}
+to {transform: translateX(235px);}
 }
 @keyframes victory {
-  from {transform: translateX(-85px);}  
-  to {transform: translateX(0px);}
+from {transform: translateX(-85px);}  
+to {transform: translateX(0px);}
 }
 @keyframes flag {
-  from {transform: scale(0);}
-  to {transform: scale(1);}
+from {transform: scale(0);}
+to {transform: scale(1);}
 }
 
 i{
-  position: absolute;
-  top:50%;
-  color:white;
+position: absolute;
+top:50%;
+color:white;
 }
 
 #email{left:35%;}
@@ -730,29 +730,29 @@ i{
 #linkedin{left:65%;}
 
 .waviy {
-  display: flex;
-  font-size:30px;
-  width:100%;
-  justify-content: center;
-  align-items: center;
-  z-index:100000;
-  min-height: 30vh;
-  position: fixed;
-  top: 60px;
-  -webkit-box-reflect: below -150px linear-gradient(transparent, rgba(0,0,0,.2));
+display: flex;
+font-size:30px;
+width:100%;
+justify-content: center;
+align-items: center;
+z-index:100000;
+min-height: 30vh;
+position: fixed;
+top: 60px;
+-webkit-box-reflect: below -150px linear-gradient(transparent, rgba(0,0,0,.2));
 }
 .waviy span {
-  font-family: Verdana;
-  position: relative;
-  display: inline-block;
-  color:white;
-  text-transform: uppercase;
-  animation: waviy 1s infinite; animation-delay: calc(.1s * var(--i));
-  z-index:100000;
+font-family: Verdana;
+position: relative;
+display: inline-block;
+color:white;
+text-transform: uppercase;
+animation: waviy 1s infinite; animation-delay: calc(.1s * var(--i));
+z-index:100000;
 }
 @keyframes waviy {
-  0%,40%,100% {transform: translateY(0)}
-  20% {transform: translateY(-20px)}
+0%,40%,100% {transform: translateY(0)}
+20% {transform: translateY(-20px)}
 }
 
 /* ----------------------------Map--------------------------- */
@@ -760,144 +760,144 @@ i{
 
 /* ----------------------------Mobile query--------------------------- */
 @media screen and (min-width:100px) {
-  .navbtn {
-    background-color:rgb(0,0,0,0); color:rgb(255,255,255);
-    border: none;
-    font-size: 30px;
-    padding-right:30px;
-    position:absolute;
-    top:0; right:0;
-  }
-  
-  .nav-content {
-    display:none;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255,255,255);
-    position: fixed;
-    top:0; right:0;
-    height: 100%; width: 200px;
-    overflow: auto;
-    z-index:1;
-  } 
+.navbtn {
+  background-color:rgb(0,0,0,0); color:rgb(255,255,255);
+  border: none;
+  font-size: 30px;
+  padding-right:30px;
+  position:absolute;
+  top:0; right:0;
+}
 
-  .nav-content a {
-    color: black;
-    padding:14px;
-  }
+.nav-content {
+  display:none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255,255,255);
+  position: fixed;
+  top:0; right:0;
+  height: 100%; width: 200px;
+  overflow: auto;
+  z-index:1;
+} 
 
-  .nav-content a:hover {background-color: rgb(20,27,35); color:rgb(255,255,255);}
-  nav:hover .nav-content {display: block;}
+.nav-content a {
+  color: black;
+  padding:14px;
+}
 
-  main{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "placehold"
-      "i1"
-      "p1"
-      "i2"
-      "p2"
-      "i3"
-      "p3"
-      "i4"
-      "p4"
-      "foot";
-  }
-  .grid{column-count:2;}
-  .para{padding:35% 100px 35% 100px;}
+.nav-content a:hover {background-color: rgb(20,27,35); color:rgb(255,255,255);}
+nav:hover .nav-content {display: block;}
 
-  .abouttitle{
-    top: 350px; right: 50px;
-    font-size: small;
-  }
-  .abouttitlevert{
-    top: 398px; right: 24px;
-    font-size: small;
-  }
-  .allimages img{width:150px;}
-  .group2_yellow img{width:400px;}
-  .section-title{font-size: 44px;}
-  .outer-container{width:250px;right:15vw;}
-  .aboutdev{top: 1820px;right:7vw;}
-  #interest{top:2100px;font-size: x-large;}
-  .console-container{top:2200px; font-size: x-large;}
+main{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "placehold"
+    "i1"
+    "p1"
+    "i2"
+    "p2"
+    "i3"
+    "p3"
+    "i4"
+    "p4"
+    "foot";
+}
+.grid{column-count:2;}
+.para{padding:35% 100px 35% 100px;}
+
+.abouttitle{
+  top: 350px; right: 50px;
+  font-size: small;
+}
+.abouttitlevert{
+  top: 398px; right: 24px;
+  font-size: small;
+}
+.allimages img{width:150px;}
+.group2_yellow img{width:400px;}
+.section-title{font-size: 44px;}
+.outer-container{width:250px;right:15vw;}
+.aboutdev{top: 1820px;right:7vw;}
+#interest{top:2100px;font-size: x-large;}
+.console-container{top:2200px; font-size: x-large;}
 }
 
 /* ----------------------------Tablet query--------------------------- */
 @media screen and (min-width:750px) {
-  main{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-      "placehold placehold"
-      "i1 p1"
-      "p2 i2"
-      "i3 p3"
-      "p4 i4"
-      "foot foot";
-  }
-  .grid{column-count:3;}
-  .para{ padding:25% 10px 25% 10px;}
+main{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "placehold placehold"
+    "i1 p1"
+    "p2 i2"
+    "i3 p3"
+    "p4 i4"
+    "foot foot";
+}
+.grid{column-count:3;}
+.para{ padding:25% 10px 25% 10px;}
 
-  .abouttitle{
-    top: 200px; right: 70px;
-    font-size: large;
-  }
-  .abouttitlevert{
-    top: 267px; right: 33px;
-    font-size: large;
-  }
-  .allimages img{width:200px;}
-  .group2_yellow img{width:700px;}
-  .section-title{font-size:55px;}
-  .outer-container{width:500px;right:20vw;}
-  .aboutdev{top: 2150px;right:15vw;}
-  #interest{top:2450px;font-size: xx-large;}
-  .console-container{top:2550px;font-size: xx-large;}
+.abouttitle{
+  top: 200px; right: 70px;
+  font-size: large;
+}
+.abouttitlevert{
+  top: 267px; right: 33px;
+  font-size: large;
+}
+.allimages img{width:200px;}
+.group2_yellow img{width:700px;}
+.section-title{font-size:55px;}
+.outer-container{width:500px;right:20vw;}
+.aboutdev{top: 2150px;right:15vw;}
+#interest{top:2450px;font-size: xx-large;}
+.console-container{top:2550px;font-size: xx-large;}
 }
 
 /* ---------------------------Desktop query--------------------------- */
 @media screen and (min-width:1400px){
-  #linked .nav-content {padding-top:10px;}
-  .navbtn {display: none;}  
+#linked .nav-content {padding-top:10px;}
+.navbtn {display: none;}  
 
-  .nav-content {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    background-color:rgba(20,27,35,0);
-    color:white;
-    position: absolute;
-    top:0; right:0;
-    width: 800px; height: auto;
-  } 
+.nav-content {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color:rgba(20,27,35,0);
+  color:white;
+  position: absolute;
+  top:0; right:0;
+  width: 800px; height: auto;
+} 
 
-  .nav-content li {
-    display: inline-block;
-    margin-right: 5px;
-  }
+.nav-content li {
+  display: inline-block;
+  margin-right: 5px;
+}
 
-  .nav-content a {
-    padding:10px;
-    color: white;
-  }
+.nav-content a {
+  padding:10px;
+  color: white;
+}
 
-  .nav-content a:hover {border-style: solid; border-width: 1px;}
-  .grid{column-count:4;}
-  .para{padding:35% 200px 35% 200px;}
+.nav-content a:hover {border-style: solid; border-width: 1px;}
+.grid{column-count:4;}
+.para{padding:35% 200px 35% 200px;}
 
-  .abouttitle{
-    top: 200px; right: 100px;
-    font-size: xx-large;
-  }
-  .abouttitlevert{
-    top: 325px;
-    right: 35px;
-    font-size: xx-large;
-  }
-  .allimages img{width:300px;}
-  .group2_yellow img{width:900px;}
-  .outer-container{right:30vw;}
-  .aboutdev{right:25vw;}
+.abouttitle{
+  top: 200px; right: 100px;
+  font-size: xx-large;
+}
+.abouttitlevert{
+  top: 325px;
+  right: 35px;
+  font-size: xx-large;
+}
+.allimages img{width:300px;}
+.group2_yellow img{width:900px;}
+.outer-container{right:30vw;}
+.aboutdev{right:25vw;}
 }
