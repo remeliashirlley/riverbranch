@@ -274,6 +274,10 @@ overflow: hidden;
 
 .scrolling-text {
 display: inline-block;
+-webkit-transition: -webkit-transform  0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+-moz-transition: -moz-transform  0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+-o-transition: -o-transform  0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+-ms-transition: -ms-transform  0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
 transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
 will-change: transform;
 backface-visibility: hidden;
@@ -283,6 +287,10 @@ backface-visibility: hidden;
 color: black;
 font-size: 30px;
 white-space: nowrap;
+-webkit-transition: -webkit-transform  0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+-moz-transition: -moz-transform  0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+-o-transition: -o-transform  0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
+-ms-transition: -ms-transform  0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
 transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
 margin: 50px 0;
 }
