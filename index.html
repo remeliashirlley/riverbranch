@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
 </head>
 <body>
+<!----------------------------------------------- loading screen -------------------------------------------->
     <div class="loader-container">
         <div class="loader"></div>
         <div class="loadtext">RB</div>
@@ -24,6 +25,7 @@
         });
     </script>
 
+<!----------------------------------------------- navigation bar -------------------------------------------->
     <nav>
         <div class="logo" style="cursor: pointer;" onclick="window.location='index.html';">
             <span style="--i:1">R</span>
@@ -42,6 +44,8 @@
         </ul>
     </nav>
 
+<!--------------------------- background music and controls for hero section -------------------------------->
+
     <div class="audioicon" onclick="playpause()"><i class="fa-solid fa-circle-play"></i></div>
     <audio id="backgroundmusic" src="audio/Smokey Eye - Cheel.mp3" type="audio/mpeg">
     </audio>
@@ -55,6 +59,7 @@
 
     <div class="scrollicon"><a href=#nextsection><i class="fa-solid fa-angle-down"></i></a></div>
 
+<!--------------------------- changing text and header on background image ---------------------------------->
     <section class="home-hero parallax--bg">
         <header>
             <div class="title">
@@ -74,12 +79,14 @@
     <script src="js/parallax.js"></script>
     
     <main>
+<!--------------------------- placeholder below hero section of home page ----------------------------------->
         <section class="placeholder" id="nextsection">
            <h3>fernweh</h3>
            <h4>[feirn-vay] . German </h4>
            <h5> (.n) an ache for distant places; missing places you've never been. "Craving for travel."</h5>
         </section>
 
+<!--------------------------- grid section of home page with images and para -------------------------------->
         <div class="img-wrapper"><a href="common/adrenaline.html"><img src="images/1.jpg" alt="Man riding ATV in dessert" Style="grid-area:i1; height:auto;width:100%;";></a></div>
         <section class="para" id="adrenalinepara">
             <h1>Adrenaline</h1>
