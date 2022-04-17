@@ -281,7 +281,7 @@ backface-visibility: hidden;
 
 .scrolling-text .scrolling-text-content {
 color: black;
-font-size: 30px;
+font-size: 25px;
 white-space: nowrap;
 transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
 margin: 50px 0;
