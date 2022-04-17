@@ -824,11 +824,11 @@ main{
 .para{padding:35% 100px 35% 100px;}
 
 .abouttitle{
-  top: 350px; right: 40px;
+  top: 350px; right: 35px;
   font-size: small;
 }
 .abouttitlevert{
-  top: 400px; right: 15px;
+  top: 400px; right: 10px;
   font-size: small;
 }
 .allimages img{width:150px;}
