@@ -9,6 +9,8 @@ color:rgb(22, 29, 32);
 font-family: 'Montserrat', sans-serif;
 }
 
+/* ///////////////////////////////////////////////// ALL PAGES /////////////////////////////////////////////////////*/
+
 /* ----------------------------Loading screen--------------------------- */
 .loader-container{
 height:100vh;  width:100%;
@@ -42,31 +44,6 @@ animation: Loadtext 5s ease-in-out;
 @keyframes Loadtext{
 0% {opacity:0;}
 100% {opacity:1;}
-}
-
-/* ----------------------------Background image for home page--------------------------- */
-.home-hero {
-background-image: url(../images/adrien-delforge-GTNaEBVznRs-unsplash.jpg);
-background-size: cover; background-position: center;
-height:30vh; width:100%;
-padding: 25em 0;
-color: #FFF;
-}
-
-.audioicon i{
-position: absolute;
-right:50px;
-margin-top: 40vh;
-color:white;
-font-size: xx-large;
-}
-
-.scrollicon i{
-position: absolute;
-margin-top:40vh; margin-left:50%;
-left:-15px;
-color:white;
-font-size: xx-large;
 }
 
 /* ----------------------------Logo with animation--------------------------- */
@@ -109,6 +86,47 @@ text-decoration: none;
 font-size: 12px; font-weight:bold;
 display: block;
 }
+
+/* ----------------------------Footer--------------------------- */
+footer{
+  position:fixed;
+  z-index:2000000;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  background-color:rgba(20,27,35,1); color:rgb(255,255,255);
+  font-family:crimson pro; font-size: 30px;
+  padding-top:5px; padding-bottom:5px;
+  grid-area:foot;
+  }
+
+/* ///////////////////////////////////////////////// HOME PAGE //////////////////////////////////////////////////*/
+
+/* ----------------------------Background image for home page--------------------------- */
+.home-hero {
+  background-image: url(../images/adrien-delforge-GTNaEBVznRs-unsplash.jpg);
+  background-size: cover; background-position: center;
+  height:30vh; width:100%;
+  padding: 25em 0;
+  color: #FFF;
+  }
+  
+  /* ----------------------------Background music for home page--------------------------- */
+  .audioicon i{
+  position: absolute;
+  right:50px;
+  margin-top: 40vh;
+  color:white;
+  font-size: xx-large;
+  }
+  
+  .scrollicon i{
+  position: absolute;
+  margin-top:40vh; margin-left:50%;
+  left:-15px;
+  color:white;
+  font-size: xx-large;
+  }
 
 /* ----------------------------Home page header--------------------------- */
 header {
@@ -179,20 +197,11 @@ vertical-align:middle;
 #roadtrippara {grid-area:p3;}
 #cravingspara {grid-area:p4;}
 
-/* ----------------------------Footer--------------------------- */
-footer{
-position:fixed;
-z-index:2000000;
-bottom:0;
-width:100%;
-text-align: center;
-background-color:rgba(20,27,35,1); color:rgb(255,255,255);
-font-family:crimson pro; font-size: 30px;
-padding-top:5px; padding-bottom:5px;
-grid-area:foot;
-}
 
-/* ----------------------------About section--------------------------- */
+
+/* ///////////////////////////////////////////////// ABOUT PAGE //////////////////////////////////////////////////*/
+
+/* ----------------------------About section parallax image gallery--------------------------- */
 .parallax {
 height: 1000px;
 overflow-x: hidden; overflow-y: auto;
@@ -244,6 +253,7 @@ z-index: 2;
 .group4_orange {top:80%; left:78%;}
 .group4_green {top:55%; left:50%;}
 
+/* ----------------------------Header text and description above parallax gallery--------------------------- */
 .abouttitle{position: absolute;}
 .abouttitlevert{
 position: absolute;
@@ -266,6 +276,7 @@ transform: rotate(-90deg);
   font-size: xx-large;
 }
 
+/* ---------------------------- Horizontal scroll text below gallery--------------------------- */
 .container {
 position: relative;
 width: 100%;
@@ -287,6 +298,7 @@ transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
 margin: 50px 0;
 }
 
+/* ---------------------------- About section with text color change on scroll --------------------------- */
 .outer-container {
 /* max-width: 600px; */
 margin: auto;
@@ -325,6 +337,7 @@ position: relative;
 display: block;
 }
 
+/* ---------------------------- About developer detailed paragraph --------------------------- */
 .aboutdev{
 width:270px;
 padding: 30px 30px 30px 30px;
@@ -336,6 +349,7 @@ margin-left:30vw;
 z-index:30;
 }
 
+/* ---------------------------- Interests text animation section --------------------------- */
 #interest{
 font-family: 'Rock Salt', cursive; font-size:xx-large;
 position:absolute;
@@ -358,6 +372,8 @@ position:relative;
 top:-0.14em;
 left:10px;
 }
+
+/* ///////////////////////////////////////////////// 4 THEME PAGES (adrenaline, surr...) //////////////////////////////////////////////////*/
 
 /* ----------------------------Linked pages grid section--------------------------- */
 .grid {
@@ -386,7 +402,9 @@ padding: 2px 5px 2px 5px;
 .image img:hover +.text{display: inline-block;}
 .image img:hover{margin-bottom: -24px;}
 
-/* ----------------------------Contact page external links--------------------------- */
+/* ///////////////////////////////////////////////// CONTACT PAGE //////////////////////////////////////////////////*/
+
+/* ----------------------------Background animation for contact page--------------------------- */
 #makapen_animation {
 width:100%;
 height:100vh;
@@ -735,16 +753,7 @@ from {transform: scale(0);}
 to {transform: scale(1);}
 }
 
-i{
-position: absolute;
-top:50%;
-color:white;
-}
-
-#email{left:35%;}
-#github{left:50%;}
-#linkedin{left:65%;}
-
+/* ----------------------------Contact header text--------------------------- */
 .waviy {
 display: flex;
 font-size:30px;
@@ -771,8 +780,24 @@ z-index:100000;
 20% {transform: translateY(-20px)}
 }
 
+/* ----------------------------Contact page icons with external links--------------------------- */
+i{
+  position: absolute;
+  top:50%;
+  color:white;
+  }
+  
+  #email{left:35%;}
+  #github{left:50%;}
+  #linkedin{left:65%;}
+
+/* ///////////////////////////////////////////////// EXPLORE PAGE //////////////////////////////////////////////////*/
+
 /* ----------------------------Map--------------------------- */
 #map { position: absolute; top:50px; width: 100%; height:1000px; }
+
+
+/* ///////////////////////////////////////////////// RESPONSIVE QUERY SECTION //////////////////////////////////////////////////*/
 
 /* ----------------------------Mobile query--------------------------- */
 @media screen and (min-width:100px) {
