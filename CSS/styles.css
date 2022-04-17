@@ -858,7 +858,7 @@ main{
     "foot foot";
 }
 .grid{column-count:3;}
-.para{ padding:25% 10px 25% 10px;}
+.para{ padding:20% 10px 0% 10px;}
 
 .abouttitle{
   top: 200px; right: 40px;
