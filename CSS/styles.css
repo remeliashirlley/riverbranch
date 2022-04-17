@@ -244,6 +244,7 @@ z-index: 2;
 .allimages{position:absolute;}
 .allimages img{height:auto;}
 
+.group1_purple {top:0%;left:-4%;}
 .group1_green {top:40%;left:30%;}
 .group2_orange {left:75%;}
 .group2_blue {top:32%;left:55%;}
@@ -276,28 +277,6 @@ transform: rotate(-90deg);
   font-size: xx-large;
 }
 
-/* ---------------------------- Horizontal scroll text below gallery--------------------------- */
-.container {
-position: relative;
-width: 100%;
-overflow: hidden;
-}
-
-.scrolling-text {
-display: inline-block;
-transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
-will-change: transform;
-backface-visibility: hidden;
-}
-
-.scrolling-text .scrolling-text-content {
-color: black;
-font-size: 25px;
-white-space: nowrap;
-transition: transform 0.5s cubic-bezier(0.23, 0.36, 0.28, 0.83);
-margin: 50px 0;
-}
-
 /* ---------------------------- About section with text color change on scroll --------------------------- */
 .outer-container {
 /* max-width: 600px; */
@@ -305,7 +284,7 @@ margin: auto;
 width: 500px;
 padding: 200px 0px;
 position:absolute;
-top:1200px;
+top:900px;
 }
 
 .image-container {
@@ -860,9 +839,9 @@ main{
 .group2_yellow img{width:400px;}
 .section-title{font-size: 44px;}
 .outer-container{width:250px;right:15vw;}
-.aboutdev{top: 1820px;right:7vw;}
-#interest{top:2100px;font-size: x-large;}
-.console-container{top:2200px; font-size: x-large;}
+.aboutdev{top: 1520px;right:10vw;}
+#interest{top:1800px;font-size: x-large;}
+.console-container{top:1900px; font-size: x-large;}
 }
 
 /* ----------------------------Tablet query--------------------------- */
@@ -882,20 +861,20 @@ main{
 .para{ padding:25% 10px 25% 10px;}
 
 .abouttitle{
-  top: 200px; right: 70px;
+  top: 200px; right: 40px;
   font-size: large;
 }
 .abouttitlevert{
-  top: 268px; right: 36px;
+  top: 268px; right: 6px;
   font-size: large;
 }
 .allimages img{width:200px;}
 .group2_yellow img{width:700px;}
 .section-title{font-size:55px;}
 .outer-container{width:500px;right:20vw;}
-.aboutdev{top: 2150px;right:15vw;}
-#interest{top:2450px;font-size: xx-large;}
-.console-container{top:2550px;font-size: xx-large;}
+.aboutdev{top: 1850px;right:15vw;}
+#interest{top:2050px;font-size: xx-large;}
+.console-container{top:2150px;font-size: xx-large;}
 }
 
 /* ---------------------------Desktop query--------------------------- */
