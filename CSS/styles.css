@@ -162,8 +162,8 @@ header {
 
 /* ----------------------------Home page grid section--------------------------- */
 .img-wrapper {
-  display: inline-block; /* change the default display type to inline-block */
-  overflow: hidden;      /* hide the overflow */
+  display: inline-block;
+  overflow: hidden;   
 }
 .img-wrapper img {
   transition: all .2s ease;
@@ -201,7 +201,7 @@ footer{
 
 .parallax__group {
   position: relative;
-  height: 100vh;
+  height: 1000px;
   -webkit-transform-style: preserve-3d; transform-style: preserve-3d;
 }
 
@@ -227,45 +227,21 @@ footer{
   z-index: 2;
 }
 
-/* style the groups
---------------------------------------------- */
-#group1 {z-index: 5; /* slide over group 2 */}
-#group2 {z-index: 3; /* slide under groups 1 and 3 */}
-#group3 {z-index: 4; /* slide over group 2 and 4 */}
-#group4 {z-index: 2; /* slide under group 3 and 5 */}
+#group1 {z-index: 5;}
+#group2 {z-index: 2;}
+#group3 {z-index: 4;}
+#group4 {z-index: 3;}
 
-.group1_green {
-  position: absolute;
-  top:40%;left:30%;
-}
-.group2_orange {
-  position: absolute;
-  left:75%;
-}
-.group2_blue {
-  position: absolute;
-  left:55%;
-}
-.group2_yellow {
-   position: absolute;
-  top:86%; right:26%;  
-}
-.group3_blueSmall {
-  position: absolute;
-  top:45%; left:25%; 
-}
-.group3_red {
-  position: absolute;
-  top:80%; left:62%;
-}
-.group4_orange {
-  position: absolute;
-  top:80%; left:78%;
-}
-.group4_green {
-  position: absolute;
-  top:55%; left:50%;
-}
+.allimages{position:absolute;}
+
+.group1_green {top:40%;left:30%;}
+.group2_orange {left:75%;}
+.group2_blue {left:55%;}
+.group2_yellow {top:86%; right:26%;  }
+.group3_blueSmall {top:45%; left:25%; }
+.group3_red {top:80%; left:62%;}
+.group4_orange {top:80%; left:78%;}
+.group4_green {top:55%; left:50%;}
 
 .abouttitle{position: absolute;}
 .abouttitlevert{
@@ -831,17 +807,17 @@ i{
 
   .abouttitle{
     top: 200px; right: 70px;
-    font-size: large;
+    font-size: small;
   }
   .abouttitlevert{
-    top: 270px; right: 36px;
-    font-size: large;
+    top: 248px; right: 44px;
+    font-size: small;
   }
   .section-title{font-size: 44px;}
-  .outer-container{width: 300px;right:15vw;}
-  .aboutdev{top: 1810px;right:5vw;}
-  #interest{top:2050px;}
-  .console-container{top:2150px;}
+  .outer-container{width:250px;right:15vw;}
+  .aboutdev{top: 1820px;right:7vw;}
+  #interest{top:2100px;font-size: x-large;}
+  .console-container{top:2200px; font-size: x-large;}
 }
 
 /* ----------------------------Tablet query--------------------------- */
@@ -862,17 +838,17 @@ i{
 
   .abouttitle{
     top: 200px; right: 100px;
-    font-size: x-large;
+    font-size: large;
   }
   .abouttitlevert{
-    top: 292px; right: 55px;
-    font-size: x-large;
+    top: 267px; right: 63px;
+    font-size: large;
   }
   .section-title{font-size:55px;}
   .outer-container{width:500px;right:20vw;}
   .aboutdev{top: 2150px;right:15vw;}
-  #interest{top:2450px;}
-  .console-container{top:2550px;}
+  #interest{top:2450px;font-size: xx-large;}
+  .console-container{top:2550px;font-size: xx-large;}
 }
 
 /* ---------------------------Desktop query--------------------------- */
@@ -911,7 +887,7 @@ i{
   }
   .abouttitlevert{
     top: 325px;
-    right: 40px;
+    right: 35px;
     font-size: xx-large;
   }
   .outer-container{right:30vw;}
