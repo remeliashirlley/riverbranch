@@ -20,4 +20,11 @@ with description will appear on click. <br />
 	
 > Cravings
 > - Suggests interesting food places/cafes that give a transformative experience
+<br />  
+
+> Future enhancements include:
+> - Zoom in and center of coordinates on the map when user clicks a pinned image.  
+> - Click on image in grid of each travel theme will result in fly to map location on Explore page
+> - Sorting and clustering of images in the grid section of travel themes based on location/ theme 
+(e.g difficulty of traversing roads in Road Trip)
 
