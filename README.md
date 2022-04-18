@@ -2,21 +2,21 @@
  
 Web URL: remeliashirlley.github.io/riverbranch <br />  
  
-RiverBranch is a travel destination/journey website that contains 4 different travel themes: Adrenaline, Surrounding, Journey and Cravings. Each travel themes would have their own link that can be accessed from the Home page. <br />  
+RiverBranch is a travel destination/journey website that contains 4 different travel themes: Adrenaline, Surroundings, Road Trip and Cravings. Each travel themes would have their own link that can be accessed from the Home page. The site also has an Explore page with the world map and
+images of all activities from all the travel themes pinned at their respective coordinates. A popup 
+with description will appear on click. <br />  
 
 > Adrenaline
 > - Suggests possible activities adventure seekers can do and their locations
-> - Page contains a map with locations of all the activities
-> - Users can click on location to view details
+> - Users can hover/click on image to view details and location
 > - Ranges from bungee jumping to snowboarding
 
 > Surroundings
 > - Suggest places that lets people escape reality
 > - E.g louvre, Paris
 
-> Journey
+> Road trip
 > - Provides an assortment of possible trails people can take during a road trip/hike
-> - Sorted based on distance/difficulty
 	
 > Cravings
 > - Suggests interesting food places/cafes that give a transformative experience
