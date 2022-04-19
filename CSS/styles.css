@@ -399,7 +399,7 @@ top: 60px;
 font-family: Verdana;
 position: relative;
 display: inline-block;
-color:white;
+color:rgb(20,27,35);
 text-transform: uppercase;
 animation: waviy 1s infinite; animation-delay: calc(.1s * var(--i));
 z-index:100000;
